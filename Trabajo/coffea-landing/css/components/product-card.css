@@ -1,0 +1,15 @@
+.products{padding-block:var(--space-8)}
+.product-card{display:flex;flex-direction:column;gap:var(--space-4);padding:var(--space-4);background:var(--color-sand-20);border:1.5px solid var(--color-sand);border-radius:var(--radius-card);height:100%}
+.product-card__media{position:relative;overflow:hidden;border-radius:var(--radius-img)}
+.product-card__media img{width:100%;aspect-ratio:334/364;object-fit:cover;transition:transform var(--transition)}
+.product-card__fav-input{position:absolute;opacity:0;top:var(--space-4);right:var(--space-4);width:44px;height:44px;margin:0;z-index:2;cursor:pointer}
+.product-card__fav{position:absolute;top:var(--space-4);right:var(--space-4);width:33px;height:33px;background:url("../../assets/icons/heart.svg") center/contain no-repeat}
+.product-card__fav-input:checked + .product-card__fav{background-image:url("../../assets/icons/heart-filled.svg")}
+.product-card__fav-input:focus-visible + .product-card__fav{outline:2px solid var(--color-espresso);outline-offset:3px}
+.product-card__title{font-family:var(--font-body);font-weight:600;font-size:var(--fs-card-title)}
+.product-card__desc{font-family:var(--font-body);font-size:var(--fs-lg);line-height:1.4;color:var(--color-maroon)}
+.product-card__row{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.product-card__price{font-weight:600;font-size:var(--fs-lg);color:var(--color-maroon)}
+.product-card__btn{display:inline-flex;align-items:center;min-height:44px;padding:var(--space-3) var(--space-5);background:var(--color-maroon);color:var(--color-white);border-radius:var(--radius-btn);font-weight:500;font-size:var(--fs-sm);transition:background-color var(--transition),transform var(--transition)}
+.product-card__btn:hover{background:var(--color-espresso);transform:translateY(-2px)}
+@media (hover:hover){.product-card:hover{box-shadow:0 8px 20px var(--color-border-soft)}.product-card:hover img{transform:scale(1.03)}}

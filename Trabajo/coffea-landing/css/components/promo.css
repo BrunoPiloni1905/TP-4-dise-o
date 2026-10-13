@@ -1,0 +1,6 @@
+.promo{background:var(--color-sand);padding-block:var(--space-8);text-align:center}
+.promo__img{display:none}
+.promo__title{font-family:var(--font-display);font-weight:600;font-size:var(--fs-cta);line-height:1.25;color:var(--color-black);max-width:372px;margin-inline:auto}
+.promo__btn{margin-top:var(--space-5);padding:var(--space-3) var(--space-7);background:var(--color-espresso);color:var(--color-bg);font-family:var(--font-body);font-weight:500;font-size:var(--fs-base)}
+.promo__btn img{width:20px}
+@media (min-width:768px){.promo{position:relative;overflow:hidden;display:flex;justify-content:center;align-items:center;min-height:335px;padding:0}.promo__img{display:block;position:absolute;top:0;height:100%;width:auto}.promo__img--left{left:0;max-width:30%;object-fit:cover}.promo__img--right{right:0;max-width:30%;object-fit:cover}.promo__inner{position:relative}}

@@ -1,0 +1,18 @@
+.header{position:absolute;top:var(--space-5);left:0;right:0;z-index:10;color:var(--color-white)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4)}
+.header__logo{font-family:var(--font-display);font-weight:700;font-size:var(--fs-logo);text-transform:lowercase}
+.header__search{width:44px;height:44px;border:0;border-radius:50%;background:var(--color-white) url("../../assets/icons/search.svg") center/50% no-repeat;cursor:pointer}
+.header__right{display:flex;align-items:center;gap:var(--space-4)}
+.nav--desktop{display:none}
+.menu summary{list-style:none;cursor:pointer;min-width:44px;min-height:44px;display:grid;place-items:center;font-size:1.75rem}
+.menu summary::-webkit-details-marker{display:none}
+.menu ul{position:absolute;right:0;top:100%;background:var(--color-espresso);border-radius:var(--radius-img);padding:var(--space-2)}
+.menu{position:relative}
+.nav a{display:block;padding:var(--space-3) var(--space-4);font-weight:500;font-size:var(--fs-md);text-transform:uppercase}
+.nav a[href="#login"]{font-weight:600}
+.nav a:hover{text-decoration:underline}
+@media (min-width:1024px){
+  .nav--desktop{display:block}.nav--desktop ul{display:flex;gap:var(--space-5)}
+  .menu{display:none}.header__search{width:61px;height:61px}
+  .header{top:3.4rem}
+}
